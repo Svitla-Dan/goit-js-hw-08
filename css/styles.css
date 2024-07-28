@@ -1,0 +1,57 @@
+@import url('https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css');
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery-container {
+  width: 1440px;
+  padding: 24px 156px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex-basis: 360px;
+  height: 200px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
