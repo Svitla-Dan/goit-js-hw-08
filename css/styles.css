@@ -16,10 +16,6 @@ ul {
 body {
   margin: 0;
   background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
 }
 
 img {
@@ -27,17 +23,14 @@ img {
   max-width: 100%;
 }
 
-.gallery-container {
-  width: 1440px;
-  padding: 24px 156px;
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 24px;
-  justify-content: center;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  padding: 24px 156px;
 }
 
 .gallery-item {
@@ -49,7 +42,7 @@ img {
   width: 360px;
   height: 200px;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-image:hover {
